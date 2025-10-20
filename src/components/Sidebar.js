@@ -101,39 +101,10 @@ export default function Sidebar({ isOpen, onClose }) {
             ))}
           </div>
 
-          {/* Quick Links */}
-          <div className="pt-4 border-t border-gray-200">
-            <h3 className="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-              Quick Links
-            </h3>
-            {quickLinks.map(link => (
-              <button
-                key={link.id}
-                onClick={() => handleNavigation(link)}
-                className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
-              >
-                <span>{link.label}</span>
-                <ChevronRight className="w-4 h-4 text-gray-400" />
-              </button>
-            ))}
-          </div>
+          
         </nav>
 
-        {/* Sidebar Footer */}
-        <div className="p-4 border-t border-gray-200 bg-gray-50">
-          <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-3">
-            <div className="flex items-start space-x-2">
-              <AlertCircle className="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-medium text-indigo-900">Need Help?</p>
-                <p className="text-xs text-indigo-700 mt-1">Contact IT Support for assistance</p>
-                <button className="text-xs text-indigo-600 font-medium mt-2 hover:text-indigo-700">
-                  Get Support →
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </aside>
     </>
   );
